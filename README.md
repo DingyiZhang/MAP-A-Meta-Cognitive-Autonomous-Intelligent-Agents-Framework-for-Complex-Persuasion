@@ -1,13 +1,76 @@
-# MAP-A-Meta-Cognitive-Autonomous-Intelligent-Agents-Framework-for-Complex-Persuasion
+# MA<sup>2</sup>P: A Meta-Cognitive Autonomous Intelligent Agents Framework for Complex Persuasion
 
-A Method for Complex Persuasion
+This repository contains the prompt templates and representative materials for the MA<sup>2</sup>P prompting pipeline.
 
-Persuasive dialogue generation plays a vital role in decision-making, negotiation, counseling, and behavior change, yet it remains a challenging problem.
+MA<sup>2</sup>P is a training-free, multi-agent framework for complex persuasion. It uses a meta-level mechanism to select a high-level meta-strategy for each persuasion episode, guides turn-level strategy generation during interaction, and updates experience after the episode.
 
-In complex persuasion, where the persuadee's internal states are not expressed clearly, the persuader must interpret responses, infer the persuadee's latent mental states (e.g., beliefs and desires), and translate them into targeted, strategy-consistent actions. However, current approaches often produce generic or weakly grounded responses even when such cues are identified.
+## Contents
 
-Moreover, although large language models (LLMs) can generate persuasive content, their performance varies substantially across domains due to uneven knowledge coverage and limited reasoning generalization.
+### Prompt templates
+- `world_model_first_round_strategy.txt`  
+  Prompt for generating first-round persuasion strategies.
 
-To address these challenges, we propose MA<sup>2</sup>P, a meta-cognitive autonomous intelligent agent framework for complex persuasion. Specifically, we develop an autonomous multi-agent architecture that coordinates perception management, mental-state inference, strategy execution, memory maintenance, and performance evaluation. To mitigate cross-domain performance variation, we further design a meta-cognitive configurator that selects an appropriate meta-strategy from a structured knowledge base at the outset, thereby guiding subsequent reasoning and planning.
+- `world_model_refine_high_level_strategy.txt`  
+  Prompt for refining a selected high-level meta-strategy into turn-level actionable strategies.
 
-The paper will be released.
+- `persuader_first_round.txt`  
+  Prompt for generating the opening utterance of the persuader.
+
+- `persuader_multi_turn.txt`  
+  Prompt for generating later-turn persuasion responses.
+
+- `perception_preventive_generative_inference.txt`  
+  Prompt for inferring preventive and generative mental-state cues from dialogue history.
+
+- `persuadee_simulation.txt`  
+  Prompt for simulating the persuadee in the evaluation setting.
+
+- `judge_persuasion_success.txt`  
+  Prompt for judging whether persuasion succeeds.
+
+### Evaluation prompts
+- `ab_preference_evaluation.txt`  
+  Prompt for pairwise A/B preference evaluation.
+
+- `persuasiveness_scoring.txt`  
+  Prompt for scoring persuasiveness.
+
+- `logical_coherence_scoring.txt`  
+  Prompt for scoring logical coherence.
+
+- `helpfulness_scoring.txt`  
+  Prompt for scoring helpfulness.
+
+- `human_evaluation_instructions.txt`  
+  Instructions used in the human evaluation.
+
+### Additional files
+- `README.txt`  
+  Brief description of the released prompt files.
+
+## Framework overview
+
+MA<sup>2</sup>P consists of three stages:
+
+1. **Meta-level Judging**  
+   A configurator selects a high-level meta-strategy and evaluation rules.
+
+2. **Task-level Persuading**  
+   Multiple agents collaborate during interaction:
+   - Perception
+   - World Model
+   - Persuader
+   - Short-term Memory
+
+3. **Knowledge Updating**  
+   An evaluator assesses the outcome and updates experience for future episodes.
+
+## Notes
+
+- This repository releases the **prompt templates and evaluation prompts** used in our prompting pipeline.
+- The framework is **training-free** and built around prompt-based multi-agent orchestration.
+- Placeholder fields in the prompts (e.g., `{}`) indicate runtime inputs to be filled with scenario information, dialogue history, inferred mental states, strategies, or evaluation targets.
+
+## Citation
+
+Coming soon.
