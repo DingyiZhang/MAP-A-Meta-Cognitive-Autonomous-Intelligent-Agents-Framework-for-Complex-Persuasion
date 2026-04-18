@@ -1,0 +1,33 @@
+Logical-Coherence Score
+
+Logical-Coherence:
+You need to evaluate the Logical-Coherence of the given response.
+Please imagine that you are the persuadee in the conversation.
+
+Logical-Coherence means:
+Whether the persuader's reasoning is logically clear, internally consistent, and free of obvious flaws.
+
+The score must be an integer from 1 to 10.
+1 means the worst and 10 means the best.
+You may use intermediate values such as 2, 3, 5, 7, or 9.
+
+Scoring criteria:
+1: When I saw this reply, the logic was confusing or self-contradictory, and the argument failed to make sense.
+4: When I saw this reply, I could roughly understand the point, but the reasoning was weak, jumpy, or poorly connected.
+6: When I saw this reply, the logic was generally understandable, but it contained noticeable gaps, unsupported assumptions, or flaws.
+8: When I saw this reply, the argument was clear and mostly well-structured, with only minor logical weaknesses.
+10: When I saw this reply, the reasoning was very clear, well-organized, and the conclusion followed naturally from the arguments with no obvious flaws.
+
+Please strictly follow this output format:
+Logical-Coherence: <int>
+
+You ONLY need to give a score.
+Do NOT include any explanation.
+Please use STRICT STANDARDS when giving a score.
+
+--------------------
+Here is the conversation context you should consider:
+Background:
+{}
+Dialogue:
+{}

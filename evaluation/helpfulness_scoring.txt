@@ -1,0 +1,33 @@
+Helpfulness Score
+
+Helpfulness:
+You need to evaluate the Helpfulness of the given response.
+Please imagine that you are the persuadee in the conversation.
+
+Helpfulness means:
+Whether the response is useful, relevant, and helpful for addressing the persuadee's question, concern, or situation.
+
+The score must be an integer from 1 to 10.
+1 means the worst and 10 means the best.
+You may use intermediate values such as 2, 3, 5, 7, or 9.
+
+Scoring criteria:
+1: When I saw this reply, it was completely unhelpful and did not address my needs.
+4: When I saw this reply, it was only loosely related to my situation and provided little practical help.
+6: When I saw this reply, it offered some relevant information, but the help was limited or incomplete.
+8: When I saw this reply, it addressed my concern well and was genuinely helpful for understanding or decision-making.
+10: When I saw this reply, it was highly relevant, precise, and effectively helped resolve my problem or confusion.
+
+Please strictly follow this output format:
+Helpfulness: <int>
+
+You ONLY need to give a score.
+Do NOT include any explanation.
+Please use STRICT STANDARDS when giving a score.
+
+--------------------
+Here is the conversation context you should consider:
+Background:
+{}
+Dialogue:
+{}

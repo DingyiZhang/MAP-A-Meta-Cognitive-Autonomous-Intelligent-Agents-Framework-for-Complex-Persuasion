@@ -1,0 +1,14 @@
+Human Evaluation Instructions
+
+You will read two persuasive dialogues under the same scenario and decide which persuader performs better.
+If you think their performance is similar, you may choose a tie.
+
+Information:
+- scenario: {}
+- Dialogue 1: {}
+- Dialogue 2: {}
+
+Answer format (choose one):
+- Dialogue 1
+- Dialogue 2
+- Tie

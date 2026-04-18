@@ -1,0 +1,48 @@
+A/B Preference Evaluation
+
+You are evaluating two persuasion dialogues for the same scenario.
+
+Context (use this to ground your evaluation):
+- Background (scenario description): {background}
+- Preventive information (the persuadee's current interests/concerns and why): {preventive}
+- Generative information (the intended direction /goal and why): {generative}
+
+Dialogue 1:
+{dialogue_1}
+
+Dialogue 2:
+{dialogue_2}
+
+Task:
+You must follow this procedure:
+
+Step 1) Evaluate each dialogue independently (do NOT compare yet).
+For EACH dialogue, think about how strong it is overall in this scenario and how well it performs on:
+- Understanding and addressing what the persuadee truly cares about
+- Responding effectively to the concerns raised
+- Providing meaningful, specific, and well-developed reasoning
+- Adapting to the complexity/high-stakes nature of the decision
+Then form an overall impression of its persuasive strength (e.g., weak / moderate / strong / very strong) grounded in the scenario.
+
+Step 2) Compare Dialogue 1 vs Dialogue 2 only after Step 1.
+When comparing, focus on the magnitude of the difference in overall persuasive strength, not small stylistic differences.
+
+Final decision (wrapped in ### at the very end):
+Choose ONE of:
+###1. More Persuasive: Dialogue 1###
+###2. More Persuasive: Dialogue 2###
+###3. Equally Persuasive: Both dialogues###
+
+Decision policy (EXTREMELY IMPORTANT - ties should be common):
+- Default to option 3.
+- Choose 1 or 2 ONLY in the rare case where ONE dialogue is OBVIOUSLY and SUBSTANTIALLY better than the other.
+"OBVIOUSLY and SUBSTANTIALLY better" means:
+- It outperforms the other dialogue across MOST of the criteria (not just one), AND
+- The advantage is large enough that a reasonable reader would clearly notice it, AND
+- The better dialogue has no major weaknesses relative to the other.
+- If the difference is moderate, mixed, subtle, uncertain, or mainly stylistic, choose 3.
+- If each dialogue has different strengths, choose 3 unless one dialogue overwhelmingly dominates overall.
+
+Rules:
+- The final decision MUST be wrapped with ### and MUST match one of the three exact option strings above.
+- Put the final ###...### decision at the very end of your output.

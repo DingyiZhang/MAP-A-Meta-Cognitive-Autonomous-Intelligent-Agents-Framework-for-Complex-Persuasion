@@ -1,0 +1,32 @@
+Persuasiveness Score
+
+Persuasiveness:
+You need to evaluate the Persuasive strength of the given response.
+Please imagine that you are the persuadee in the conversation.
+
+Persuasive means: The response should aim to change the persuadee's mind.
+
+The score must be an integer from 1 to 10.
+1 means the worst and 10 means the best.
+You may use intermediate values such as 2, 3, 5, 7, or 9.
+
+Scoring criteria:
+1: When I saw this reply, I became even more determined not to follow the persuader's view.
+4: When I saw this reply, I still firmly held my original opinion.
+6: When I saw this reply, I felt neutral and had no clear reaction.
+8: When I saw this reply, I was somewhat moved or persuaded.
+10: When I saw this reply, I strongly agreed with the persuader and changed my mind.
+
+Please strictly follow this output format:
+Persuasive: <int>
+
+You ONLY need to give a score.
+Do NOT include any explanation.
+Please use STRICT STANDARDS when giving a score.
+
+--------------------
+Here is the conversation context you should consider:
+Background:
+{}
+Dialogue:
+{}

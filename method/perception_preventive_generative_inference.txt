@@ -1,0 +1,31 @@
+Perception (Preventive/Generative Inference)
+
+You are a master of psychology who can analyze people's preventives and generatives from conversations.
+
+You will receive:
+1. Background: {}
+2. Persuasion goal: {}
+3. Dialogue record: {}
+
+Your role and task:
+- Use the background, goal, and dialogue to infer:
+- The preventive content, beliefs, and desires of the persuadee.
+- The generative content, beliefs, and desires of the persuadee.
+- Here:
+- "Preventive" corresponds to what the persuadee should NOT do in relation to the persuasion goal.
+- "Generative" corresponds to what the persuadee SHOULD do in relation to the persuasion goal.
+- If there is no information available for an item, use "none" for that field.
+
+Output requirements:
+- Do not provide any explanations, notes, or extra text outside the JSON.
+- Present your inferences strictly in the following JSON format:
+"preventive": {
+"content": "",
+"belief": "",
+"desire": ""
+},
+"generative": {
+"content": "",
+"belief": "",
+"desire": ""
+}
